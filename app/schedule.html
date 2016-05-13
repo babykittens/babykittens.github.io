@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create a Schedule</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./Resources/Styles/main.css" />
+	<script type="text/javascript" src="./Resources/Scripts/main.js" /></script>
+</head>
+<body>
+	<!-- header section and menu button -->
+	<div class="header">
+		<img class="logo" src="./Resources/Images/WKU_logo.png" />
+		Create a Schedule
+		<span class="buttons">
+			<a href="http://www.google.com/"><img src="./Resources/Images/search.png" /></a>
+			<a onclick="showmenu()"><span class="menubutton">Menu
+			<div id="menu">
+			<a href="major.html">Major</a>
+			<a href="minor.html">Minor</a>
+			<a href="gened.html">Gen Ed</a>
+			<a href="advising.html">Advising.html</a>
+			<a href="schedule.html">Schedule.html</a>
+			</div></span></a>
+		</span>
+	</div>
+	
+	<div id="overlay" onclick="closepopup()"></div>
+	<div id="popup"></div>
+	
+	<!-- main, scrollable panel -->
+	<div class='main'>
+	
+		<!-- schedule stuff -->
+		<div class="roundrect" style="padding: .05in;">
+			<span class="pt9 bold">Select class <span class="nopad roundrect pt7" style="padding: .03in .05in; width: 1.8in; display: inline-block"><img class="bottom largeicon" style="margin-right: .16in;" src="./Resources/Images/search.png" /> Art 100 </span></span>
+			
+			<div class="pt9 half_size">&nbsp;</div>
+			
+			<table class="schedule2">
+				<tr><td>00363</td><td>3.00</td><td colspan="2">ART APPRECIATION</td><td>Bowling Green</td><td rowspan="2"><img class="pt11 hugeicon" src="./Resources/Images/plusbutton.png" /></td></tr>
+				<tr><td>FAC 0156</td><td>TR</td><td>8:00am-9:20am</td><td>Lubbers, J</td><td>01/25-05/13</td></tr>
+				<tr><td colspan="6"><hr /></td></tr>
+				<tr><td>00363 001</td><td>3.00</td><td colspan="2">ART APPRECIATION</td><td>Bowling Green</td><td rowspan="2"><img class="pt11 hugeicon" src="./Resources/Images/plusbutton.png" /></td></tr>
+				<tr><td>FAC 0156</td><td>TR</td><td>8:00am-9:20am</td><td>Lubbers, J</td><td>01/25-05/13</td></tr>
+				<tr><td colspan="6"><hr /></td></tr>
+				<tr><td>00363 001</td><td>3.00</td><td colspan="2">ART APPRECIATION</td><td>Bowling Green</td><td rowspan="2"><img class="pt11 hugeicon" src="./Resources/Images/plusbutton.png" /></td></tr>
+				<tr><td>FAC 0156</td><td>TR</td><td>8:00am-9:20am</td><td>Lubbers, J</td><td>01/25-05/13</td></tr>
+				<tr><td colspan="6"><hr /></td></tr>
+				<tr><td>00363</td><td>3.00</td><td colspan="2">ART APPRECIATION</td><td>Bowling Green</td><td rowspan="2"><img class="pt11 hugeicon" src="./Resources/Images/plusbutton.png" /></td></tr>
+				<tr><td>FAC 0156</td><td>TR</td><td>8:00am-9:20am</td><td>Lubbers, J</td><td>01/25-05/13</td></tr>
+				<tr><td colspan="6"><hr /></td></tr>
+			</table>
+		</div>
+		
+		<div class="half_size">&nbsp;</div>
+		
+		<!-- current schedule info -->
+		<div class="roundrect">
+			<table class="schedule">
+				<tr><td>MON Jan</td><td>17</td><td>AD 300</td><td>TTH</td><td>8:00am-9:25am</td></tr>
+				<tr><td colspan="5"><hr /></td></tr>
+				<tr><td>MON Jan</td><td>17</td><td>AD 430</td><td>MWF</td><td>8:00am-9:25am</td></tr>
+				<tr><td colspan="5"><hr /></td></tr>
+				<tr><td>MON Jan</td><td>17</td><td>PH 330</td><td>MWF</td><td>8:00am-9:25am</td></tr>
+				<tr><td colspan="5"><hr /></td></tr>
+				<tr><td>MON Jan</td><td>17</td><td>Art 300</td><td>TTH</td><td>8:00am-9:25am</td></tr>
+				<tr><td colspan="5"><hr /></td></tr>
+			</table>
+		</div>
+		
+		<div class="half_size">&nbsp;</div>
+		
+		<!-- advisor info, schedule link -->
+		<table class="nomargin nopad" style="width: 100%; table-layout: fixed"><tr>
+		<td class="nomargin roundrect halfpanel">
+			<a href="advising.html">
+			<img class="hugeicon floatleft" src="./Resources/Images/portrait.png" />
+			<span class="pt10 bold"> Advisor</span><br />
+			<span class="pt9"> Jensen, Jeff</span></a><br />
+			<a class="smallbutton" style="margin-left: .6in" href="mailto://dummy@mail.com">Email</a>
+		</td>
+		<td class="nopad panel_spacer">&nbsp;</td>
+		<td class="nomargin roundrect halfpanel" style="vertical-align: top">
+			<a href="javascript:alert('This feature is not implemented.')" class="pt10">
+				<img class="hugeicon floatleft" src="./Resources/Images/journal.png" /> Submit Schedule for Approval
+				<a class="smallbutton" style="margin-left: .6in" href="javascript:alert('This feature is not implemented.')">Submit</a>
+			</a>
+		</td>
+		</tr></table>
+	</div>
+</body>
+</html>

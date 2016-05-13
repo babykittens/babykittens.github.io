@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+body  {
+    background-image: url("http://orig00.deviantart.net/cc9b/f/2016/126/7/d/background_texture_by_adamredwolf-da1kb33.png");
+}
+div#hometree {
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    position: absolute;
+    z-index: -1;
+}
+div#rectangle {
+    width: 1890px;
+    height: 40px;
+    margin-top: 162px;
+    background: #925f30;
+    border: solid;
+    border-width: 5px;
+    border-color: #ffc35a;
+    position: absolute;
+    z-index: -2;
+}
+div#social-buttons {
+    float: right;
+    padding: 0px;
+    margin: auto 0px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+div#manu {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    z-index: 5;
+}

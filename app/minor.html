@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minor Classes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./Resources/Styles/main.css" />
+	<script type="text/javascript" src="./Resources/Scripts/main.js" /></script>
+</head>
+<body>
+	<!-- header section and menu button -->
+	<div class="header">
+		<img class="logo" src="./Resources/Images/WKU_logo.png" />
+		Minor
+		<span class="buttons">
+			<a href="http://www.google.com/"><img src="./Resources/Images/search.png" /></a>
+			<a onclick="showmenu()"><span class="menubutton">Menu
+			<div id="menu">
+			<a href="major.html">Major</a>
+			<a href="minor.html">Minor</a>
+			<a href="gened.html">Gen Ed</a>
+			<a href="advising.html">Advising.html</a>
+			<a href="schedule.html">Schedule.html</a>
+			</div></span></a>
+		</span>
+	</div>
+	
+	<div id="overlay" onclick="closepopup()"></div>
+	<div id="popup"></div>
+	
+	<!-- main, scrollable panel -->
+	<div class='main'>
+		
+		<!-- status -->
+		<div class="roundrect pt11 bold">
+			<span><img class="icon" src="./Resources/Images/hat.png" />
+			Jones, Jasmine - 4th Year, On Track</span>
+			<div class="half_size">&nbsp;</div>
+			<span class="red">Alerts: Pay Graduation Fee </span><a class="redbutton" href="javascript:alert('This feature is not implemented.')">Click</a>
+		</div>
+		<div class="half_size">&nbsp;</div>
+		
+		<!-- hours needed, graduation date section -->
+		<table class="nomargin nopad" style="width: 100%; table-layout: fixed"><tr>
+		<td class="nomargin halfpanel roundrect redshadow">
+			<img class="largeicon" src="./Resources/Images/sunset.png" />
+			<span class="pt10 bold">Visual Studies</span><br />
+			<div class="leftpanel pt9" style="margin-top: .03in; width: .6in">
+				Hours <b>Needed</b>
+			</div>
+			<span class="pt23 bold">9</span>
+		</td>
+		<td class="nopad panel_spacer"></td>
+		<td class="nomargin halfpanel roundrect redshadow">
+			<img class="largeicon" src="./Resources/Images/calendar.png" />
+			<span class="pt10 bold">Graduation</span><br />
+			<div class="leftpanel pt11" style="margin-top: .03in; width: .6in">
+				WED <b>May</b>
+			</div>
+			<span class="pt23 bold">17</span>
+		</td></tr>
+		
+		<!-- show all, show need buttons -->
+		<tr><td class="nopad halfpanel">
+			<a href="all.html">
+				<div class="roundrect pt10 bold" style="padding: .03in .1in">
+					Show All &nbsp; <img class="hugeicon" src="./Resources/Images/partial_checklist.png" />
+				</div>
+			</a>
+		<td></td>
+		</td><td class="nopad halfpanel">
+			<a href="need.html">
+				<div class="roundrect pt10 bold" style="padding: .03in .1in">
+					Show Need &nbsp; <img class="hugeicon" src="./Resources/Images/empty_checklist.png" />
+				</div>
+			</a>
+		</td></tr></table>
+		
+		<div class="half_size">&nbsp;</div>
+		
+		<!-- course information -->
+		<table class="courses">
+			<tr><td class="pt10 bold" style="width: .95in">Sping</td>
+                <td class="pt18 bold" style="width: .26in">A</td>
+                <td class="nopad pt18" style="width: calc(100% - 1.26in);">
+					<img class="largeicon bottom" src="./Resources/Images/check.png"><span class="nomargin midbox bold pt16">
+					MKT 120
+					</span><img class="largeicon bottom" src="./Resources/Images/no_plus.png"></td></tr>
+			<tr><td class="pt10 bold">Spring/Fall</td>
+				<td class="pt18 bold">B</td>
+				<td class="nopad pt18">
+					<img class="largeicon bottom" src="./Resources/Images/check.png"><span class="nomargin midbox bold pt16">
+					MKT 121
+					</span><img class="largeicon bottom" src="./Resources/Images/no_plus.png"></td></tr>
+			<tr><td class="pt10 bold">You Need This</td>
+				<td class="pt18 bold"></td>
+				<td class="nopad pt18" onclick="coursepopup(true, 'MKT 233', 'History of marketing', true)">
+					<img class="largeicon bottom" src="./Resources/Images/x.png" /><span class="nomargin midbox bold pt16 red">
+					MKT 233
+					</span><img class="largeicon bottom" src="./Resources/Images/plus.png" /></td></tr>
+			<tr><td class="pt10 bold">Fall</td>
+				<td class="pt18 bold">A</td>
+				<td class="nopad pt18">
+					<img class="largeicon bottom" src="./Resources/Images/check.png" /><span class="nomargin midbox bold pt16">
+					MKT 231
+					</span><img class="largeicon bottom" src="./Resources/Images/no_plus.png" /></td></tr>
+			<tr><td class="pt10 bold">You Need This</td>
+				<td class="pt18 bold"></td>
+				<td class="nopad pt18" onclick="coursepopup(true, 'Art 430', 'Learn more about your major outside of your core classes.', true)">
+					<img class="largeicon bottom" src="./Resources/Images/x.png" /><span class="nomargin midbox bold pt16 red">
+					MKT 345
+		  </span><img class="largeicon bottom" src="./Resources/Images/plus.png" /></td></tr>
+		</table>
+		
+		<div class=half_size">&nbsp;</div>
+		
+		<!-- advisor info, schedule link -->
+		<table class="nomargin nopad" style="width: 100%; table-layout: fixed"><tr>
+		<td class="nomargin roundrect halfpanel">
+			<a href="advising.html">
+			<img class="hugeicon floatleft" src="./Resources/Images/portrait.png" />
+			<span class="pt10 bold"> Advisor</span><br />
+			<span class="pt9"> Jensen, Jeff</span></a><br />
+			<a class="smallbutton" style="margin-left: .6in" href="mailto://dummy@mail.com">Email</a>
+		</td>
+		<td class="nopad panel_spacer">&nbsp;</td>
+		<td class="nomargin roundrect halfpanel" style="vertical-align: top">
+			<a href="schedule.html" class="pt10">
+				<img class="hugeicon floatleft" src="./Resources/Images/journal.png" /> Make <b>Schedule</b>
+			</a>
+		</td>
+		</tr></table>
+	</div>
+</body>
+</html>
