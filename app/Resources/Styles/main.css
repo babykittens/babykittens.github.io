@@ -79,7 +79,7 @@ body {
 	padding: .1in .07in;
 	padding-left: .17in;
 	font-size: 9pt;
-	z-index: 1;
+	z-index: 2;
 	background: linear-gradient(to right, rgba(171,179,184,255) 15%, white 15%)
 }
 
