@@ -101,6 +101,7 @@ body {
 	border-radius: .05in;
 	padding: .1in .07in;
 	padding-bottom: .4in;
+	z-index: 2;
 }
 
 .main {
@@ -401,6 +402,7 @@ body {
 	bottom: 0;
 	right: 0;
 	background: rgba(80,95,115,.85);
+	z-index: 1;
 }
 
 .buttons img {height: .30in; width: auto; vertical-align: middle;}
